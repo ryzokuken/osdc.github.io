@@ -11,26 +11,40 @@ $(window).scroll(function() {
   });
 });
 
-$('body').on('click', '.fa-angle-double-right', function() {
+$('body').on('click', '.fa-bars', function() {
   $('.navpane').animate({
-    left: '+=50vw'
+    left: '+=280px'
   }, 200);
-  $('.fa-angle-double-right').animate({
-    left: '+=50vw'
+  $('.fa-bars').animate({
+    left: '+=280px'
   }, 200, function() {
-    $(this).addClass('fa-angle-double-left');
-    $(this).removeClass('fa-angle-double-right');
+    $(this).addClass('fa-times');
+    $(this).removeClass('fa-bars');
   });
 });
 
-$('body').on('click', '.fa-angle-double-left', function() {
+$('body').on('click', '.fa-times', function() {
   $('.navpane').animate({
-    left: '-=50vw'
+    left: '-=280px'
   }, 200);
-  $('.fa-angle-double-left').animate({
-    left: '-=50vw'
+  $('.fa-times').animate({
+    left: '-=280px'
   }, 200, function() {
-    $(this).addClass('fa-angle-double-right');
-    $(this).removeClass('fa-angle-double-left');
+    $(this).addClass('fa-bars');
+    $(this).removeClass('fa-times');
+  });
+});
+
+$(function(){
+  $(".typewriter").typed({
+    strings: [
+      '<span class="dev">development</span>', 
+      '<span class="des">Design<span>', 
+      '<span class="sec">security</span>', 
+      '<span class="lin">Linux</span>', 
+      '<span class="oss">Open Source</span>^2000'
+    ],
+    typeSpeed: 0,
+    loop: true
   });
 });

@@ -1,4 +1,4 @@
-/*@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 body {
   margin: 0;
@@ -27,8 +27,8 @@ body {
 }
 
 .logo {
-  width: 512;
-  height: 384;
+  width: 512px;
+  height: 384px;
   background-image: url('../images/logo.png');
   background-size: contain;
   margin: 0 auto -90px auto;
@@ -54,7 +54,7 @@ body {
 
 .navpane {
   height: 100vh;
-  width: 50vw;
+  width: 280px;
   position: fixed;
   z-index: 1;
   right: 100vw;
@@ -81,5 +81,35 @@ footer {
   color: white;
   background: black;
   width: 100vw;
-  border: 1px solid red;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.spaced {
+  padding: 4px;
+  border-radius: 2px;
+  font-family: monospace;
+  font-size: 1.2em;
+  color: #f92672;
+  background-color: #272822;
 }
