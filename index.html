@@ -1,33 +1,56 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>OSDC</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <nav class="navpane">
-      <ul>
-        <li>OSDC</li>
-        <li>About <Us></Us></li>
-      </ul>
+    <a name="osdc"></a>
+    <nav>
+      <i class="material-icons bars">menu</i>
+      <img src="images/logo.png" class="logo">
+      <h3 class="text-center">The <span class="typewriter"></span> Community</h3>
     </nav>
-    <i class="fa fa-bars trigger-pane"></i>
-    <header class="page1">
-      <div class="box-header">
-        <div class="logo"></div>
-        <h3 class="text-center">The <span class="spaced"><span class="typewriter"></span></span> Community</h3>
-      </div>
-      <i class="fa fa-angle-double-down"></i>
-    </header>
-    <section class="about">
-      <h2 class="text-center">About Us</h2>
+    <div class="navpane">
+      <i class="material-icons close">close</i>
+      <ul>
+        <li><a href="#osdc">OSDC</a></li>
+        <li><a href="#hack">Hackathon 2017</a></li>
+      </ul>
+      <hr>
+      <ul>
+        <li><a href="https://github.com/osdc/" target="_blank">Github</a></li>
+        <li><a href="https://www.facebook.com/groups/jiitlug/" target="_blank">Facebook</a></li>
+        <li><a href="https://gitter.im/osdc/Hackers" target="_blank">Gitter</a></li>
+      </ul>
+    </div>
+    <section>
+      <a name="hack"></a>
+      <article class="text-center">
+        <h2><span class="underline-accent">Hackathon 2017</span><br><small>powered by Github</small></h2>
+        <p>Remember that idea you always wanted to hack on but never felt motivated enough?</p>
+        <h3>Now's the time.</h3>
+        <p>Join us in the Auditorium at Cyber Srishti for Hackathon 2017 and get a chance to win prizes worth Rs. 12k and give application development a competitive flair.</p>
+        <h4>Development and Design skills aren't necessarily required, but willingness to learn is.</h4>
+        <p>Network, Grind and Hack for 7 hours straight to build an app that solves real problems.</p>
+        <h3>Are you ready to take up the challenge?</h3>
+        <p>What's more is that we have separate cash prizes for the First and Second years!</p>
+        <a href="http://cybersrishti.org/events.html" target="_blank" class="btn">Register Now</a>
+      </article>
     </section>
     <footer>
-      <h3>This is the footer</h3>
+      <div class="sentence">
+        <img src="images/GitHub_Logo.png" alt="Github">
+        <i class="fa fa-heart"></i>
+        <img src="images/logo.png" alt="OSDC">
+      </div>
     </footer>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
     <script src="js/script.js"></script>

@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>OSDC</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="overlay hidden"></div>
+    <nav class="navpane">
+      <ul>
+        <li>OSDC</li>
+        <li>About <Us></Us></li>
+      </ul>
+    </nav>
+    <i class="fa fa-bars trigger-pane"></i>
+    <header class="page1">
+      <div class="box-header">
+        <div class="logo"></div>
+        <h3 class="text-center">The <span class="spaced"><span class="typewriter"></span></span> Community</h3>
+      </div>
+      <i class="fa fa-angle-double-down"></i>
+    </header>
+    <section class="about">
+      <h2 class="text-center">About Us</h2>
+    </section>
+    <footer>
+      <h3>This is the footer</h3>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.7/typed.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

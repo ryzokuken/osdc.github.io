@@ -1,116 +1,139 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
+  font-family: 'Roboto', sans-serif;
+  color: #757575;
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
 }
 
-.box-header {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
-  /*box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5), inset 0 1px rgba(255, 255, 255, 0.3), inset 0 2px rgba(255, 255, 255, 0.2), inset 0 2px 5px rgba(255, 255, 255, 0.25), inset 0 -3px 7px rgba(0, 0, 0, 0.3);*/
-  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.65);
-  border-radius: 20px;
-  padding: 0 50px;
+h1, h2, h3, h4 {
+  color: #212121;
 }
 
-.page1 {
-  background: url('../images/bg-page1.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: right;
+.navpane {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+  width: 260px;
+  position: fixed;
+  left: -280px;
+  top: 0;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-}
-
-.logo {
-  width: 512px;
-  height: 384px;
-  background-image: url('../images/logo.png');
-  background-size: contain;
-  margin: 0 auto -90px auto;
-}
-
-.about {
-  height: 100vh;
-  display: flex;
+  z-index: 1;
   background: white;
-  margin-bottom: 400px;
+}
+
+.material-icons {
+  font-size: 30px;
+}
+
+.navpane ul>li {
+  display: block;
+  font-size: 18px;
+}
+
+.navpane ul {
+  padding: 0;
+}
+
+.navpane {
+  padding: 10px;
+}
+
+nav {
+  background: #512DA8;
+  color: white;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
+  padding-bottom: 10px;
+}
+
+nav > h3 {
+  color: white;
+}
+
+nav .logo {
+  width: 90%;
+  height: auto;
+  margin: 0 5% -15% 5%;
+}
+
+@media (min-width: 512px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav .logo {
+    width: 512px;
+    margin: 0 5% -15% 5%;
+  }
+}
+
+nav .bars {
+  position: absolute;
+  left: 5px;
+  top: 5px;
 }
 
 .text-center {
   text-align: center;
 }
 
-.fa-angle-double-down {
-  position: absolute;
-  bottom: 5px;
-  font-size: 70px;
-  color: white;
+article {
+  padding: 20px;
 }
 
-.navpane {
-  height: 100vh;
-  width: 280px;
-  position: fixed;
-  z-index: 1;
-  right: 100vw;
-  /*background-color: rgba(0, 0, 0, 0.7);*/
-  background-color: orangered;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  color: white;
+.underline-accent {
+  border-bottom: 2px solid #FF5252;
 }
 
-.trigger-pane {
-  position: fixed;
+.btn {
+  text-decoration: none;
+  background: #FF5252;
   color: white;
-  font-size: 70px;
-  z-index: 1;
-  top: 10px;
-  left: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.sentence {
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sentence > img {
+  height: 48px;
+  width: auto;
+  margin: 24px;
+}
+
+.fa-heart {
+  color: crimson;
 }
 
 footer {
-  min-height: 400px;
-  z-index: -1;
-  position: fixed;
-  bottom: 0;
-  color: white;
-  background: black;
-  width: 100vw;
+  border-top: 1px solid #BDBDBD;
 }
 
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+.navpane > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.spaced {
-  padding: 4px;
-  border-radius: 2px;
-  font-family: monospace;
-  font-size: 1.2em;
-  color: #f92672;
-  background-color: #272822;
+.navpane a {
+  color: #FF5252;
+  text-decoration: none;
 }
+
+.dark-primary-color    { background: #512DA8; }
+.default-primary-color { background: #673AB7; }
+.light-primary-color   { background: #D1C4E9; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FF5252; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #757575; }
+.divider-color         { border-color: #BDBDBD; }

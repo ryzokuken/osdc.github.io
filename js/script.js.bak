@@ -1,0 +1,58 @@
+$(window).scroll(function() {
+  const scroll = $(this).scrollTop();
+
+  $('.box-header').css({
+    'transform': 'translate(0px, -' + scroll / 6 + '%)',
+    'transition': 'fadeOut 0.2s'
+  });
+
+  $('.fa-angle-double-down').css({
+    'transform': 'translate(0px, ' + scroll / 2 + '%)'
+  });
+});
+
+$('body').on('click', '.fa-bars', function() {
+  $('.navpane').animate({
+    left: '+=280px'
+  }, 200);
+  $('.fa-bars').animate({
+    left: '+=280px'
+  }, 200, function() {
+    $(this).addClass('fa-times');
+    $(this).removeClass('fa-bars');
+  });
+  $('.overlay').removeClass('hidden');
+});
+
+$('body').on('click', '.fa-times', function() {
+  $('.navpane').animate({
+    left: '-=280px'
+  }, 200);
+  $('.fa-times').animate({
+    left: '-=280px'
+  }, 200, function() {
+    $(this).addClass('fa-bars');
+    $(this).removeClass('fa-times');
+  });
+  $('.overlay').addClass('hidden');
+});
+
+Typed.new(".typewriter", {
+  strings: [
+    '<span class="dev">development</span>',
+    '<span class="des">design<span>',
+    '<span class="sec">security</span>',
+    '<span class="lin">linux</span>',
+    '<span class="oss">open source</span>',
+    '<span class="free">free</span>',
+    '<span class="hck">hacker</span>',
+    '<span class="cpn">cypherpunk</span>'
+  ],
+  typeSpeed: 0,
+  loop: true,
+  shuffle: true
+});
+
+$('.oss, .free, .lin').parent().parent().css({
+  "background-color": "white"
+})
