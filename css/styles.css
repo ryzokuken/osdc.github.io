@@ -67,6 +67,16 @@ nav .logo {
   }
 }
 
+@media (min-width: 768px) {
+  section {
+    display: flex;
+  }
+  .github {
+    border-top: none;
+    border-left: 1px solid #BDBDBD;
+  }
+}
+
 nav .bars {
   position: absolute;
   left: 5px;
@@ -78,7 +88,7 @@ nav .bars {
 }
 
 article {
-  padding: 20px;
+  padding: 5%;
 }
 
 .underline-accent {
@@ -127,6 +137,14 @@ footer {
 .navpane a {
   color: #FF5252;
   text-decoration: none;
+}
+
+.navpane i {
+  color: #212121;
+}
+
+.github {
+  border-top: 1px solid #BDBDBD;
 }
 
 .dark-primary-color    { background: #512DA8; }
